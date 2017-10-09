@@ -6,6 +6,11 @@
   "author": "Oren Shalev <shalev.oren@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "styles": "node scripts/styles.js"
+    "styles": "node scripts/styles.js",
+    "build-css": "node-sass styles/styles.scss dist/style.css",
+    "build-css-orig": "node-sass --include-path scss scss/main.scss   public/css/main.css"
+  },
+  "dependencies": {
+    "node-sass": "^4.5.3"
   }
 }

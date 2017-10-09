@@ -1,2 +1,8 @@
 console.log('styles start');
-console.log('styles end');
+try {
+    node-sass
+    console.log('styles end');
+} catch (e) {
+    console.error(`styles failed`, e);
+    throw e;
+}
