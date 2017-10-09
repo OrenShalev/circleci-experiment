@@ -1,0 +1,8 @@
+{
+  "name": "circleci-experiment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/OrenShalev/circleci-experiment.git",
+  "author": "Oren Shalev <shalev.oren@gmail.com>",
+  "license": "MIT"
+}
