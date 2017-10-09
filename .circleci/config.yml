@@ -36,5 +36,5 @@ jobs:
       # run tests!
 #      - run: yarn test
 
-      - run: npm run styles
+      - run: npm run build-css
       
