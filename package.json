@@ -6,6 +6,7 @@
   "author": "Oren Shalev <shalev.oren@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "push": "./scripts/push.sh",
     "styles": "node scripts/styles.js",
     "build-css": "node-sass styles/styles.scss dist/style.css",
     "build-css-orig": "node-sass --include-path scss scss/main.scss   public/css/main.css"
