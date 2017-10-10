@@ -8,11 +8,11 @@ echo "Build num $CIRCLE_BUILD_NUM"
 git --version
 
 echo "Config"
-if git config --local user.email >/dev/null 2>&1
+if !git config --local user.email >/dev/null 2>&1
 then
     git config --global user.email "shalev.oren@gmail.com"
 fi
-if git config --local user.name >/dev/null 2>&1
+if !git config --local user.name >/dev/null 2>&1
 then
     git config --global user.name $CIRCLE_PROJECT_USERNAME
 fi
@@ -22,4 +22,7 @@ git add .
 
 echo "Commit"
 git commit -m "circle build $CIRCLE_BUILD_NUM"
+
+echo "Push"
 git push
+
