@@ -18,5 +18,5 @@ echo "Commit"
 git commit -m "circle build $CIRCLE_BUILD_NUM"
 
 echo "Push"
-git push
+git push origin `git rev-parse --abbrev-ref HEAD`
 
